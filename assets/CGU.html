@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>App Landing - Dark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/fv.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/fv.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/newfont.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-version.css">
+
+    <style>
+        #video1 {
+
+            border-radius: 20px;
+        }
+
+        body {
+
+            background-color: black;
+            margin: 50px;
+        }
+
+        div.principale {
+            position: relative;
+            border-radius: 15%;
+            background-image: url("71.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: center;
+            min-width: 1000px;
+            padding-bottom: opx;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        div.bouton {
+            /* background-color: white; */
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 20px;
+            border: white;
+            border-radius: 15%;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        div.bouton:hover {
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15%;
+            cursor: pointer;
+            transform: translateY(-30px);
+            transition: transform 500ms ease-out 200ms;
+            background: linear-gradient(45deg, #97a1ac, #99bdec)
+        }
+
+        div.boutonHaut:hover {
+            display: inline-block;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15%;
+            cursor: pointer;
+            transform: translateY(-30px);
+            transition: transform 500ms ease-out 200ms;
+            background: linear-gradient(45deg, #97a1ac, #99bdec)
+        }
+
+        div.boutonHaut {
+
+            /* background-color:white; */
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 20px;
+            border: white;
+            border-radius: 15%;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+
+        }
+
+        p.titreBouton {
+
+            color: black;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            font-size: 14px;
+
+        }
+
+        div.divVerticale {
+
+            display: inline-block;
+        }
+
+        div.smartphone {
+            display: inline-block;
+            width: 100%;
+            min-height: 460px;
+            border-radius: 15%;
+        }
+
+        div.premier {
+            width: auto;
+            margin: 0px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        div.second {
+
+            display: inline-block;
+            width: 45%;
+            height: auto;
+        }
+
+        div.tierce {
+
+            display: inline-block;
+            width: auto;
+            margin: 0px;
+        }
+
+        iframe#video {
+            width: 100%;
+            height: 450px;
+            border-radius: 5%;
+
+        }
+
+        lottie-player.lotie {
+            margin: 0px;
+            border-radius: 15%;
+
+        }
+
+        img.logo {
+            position: absolute;
+            top: 0px;
+            left: 90%;
+
+        }
+
+        button.bouton {
+            outline: none;
+            border: none;
+            background-color: transparent;
+        }
+
+        div.card {
+            position: relative;
+            width: auto;
+            height: auto;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            margin: 48px 20px 20px 20px;
+        }
+
+
+        div.card2 {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        ul.menu2002 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            top: 0px;
+            right: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        ul.menu2002 li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        ul.menu2002 li a {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background: #171515;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #666;
+            transition: .5s;
+        }
+
+        ul.menu2002 li a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #d35400;
+            transition: .5s;
+            transform: scale(.9);
+            z-index: -1;
+        }
+
+        ul.menu2002 li a:hover:before {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px #d35400;
+            filter: blur(3px);
+        }
+
+        ul.menu2002 li a:hover {
+            color: #ffa502;
+            box-shadow: 0 0 15px #d35400;
+            text-shadow: 0 0 15px #d35400;
+        }
+    </style>
+</head>
+
+<body class="app-eight-home dark-version" data-spy="scroll" data-target=".navigation-eight" data-offset="50">
+    <!-- preloader - start -->
+    <div id="preloader" class="ei-preloader"></div>
+    <div class="ei-up">
+        <a href="#" id="scrollup" class="ei-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <!-- Start of header section
+        ============================================= -->
+    <header id="header-eight" class="main-header-eight">
+        <div class="appheader-content">
+            <div class="site-logo float-left">
+                <a href="#"><img src="logo.png" alt=""></a>
+            </div>
+            <!-- <nav class="navigation-eight ul-li">
+                <ul>
+                    <li><a class="nav-link" href="#eight-banner">Home</a></li>
+                    <li><a class="nav-link" href="#feature-eight">Features</a></li>
+                    <li><a class="nav-link" href="#eight-service">Showcase</a></li>
+                    <li><a class="nav-link" href="#ei-team">Team</a></li>
+                    <li><a class="nav-link" href="#ei-faq">FAQ</a></li>
+                    <li><a class="nav-link" href="#ei-screenshots">Screenshots</a></li>
+                </ul>
+            </nav> -->
+            <nav class="navigation-eight ul-li">
+                <ul>
+                    <li class="nav-link"><a href="#eight-banner"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li class="nav-link"><a href="#ei-screenshots"><i class="fa fa-file-image-o"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="#featured_service"><i class="fa fa-thumbs-up"
+                                aria-hidden="true"></i></a></li>
+                    <li class="nav-link"><a href="#pm-feature-2"><i class="fa fa-sliders" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="#eg-how-work"><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="#settings-easy"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="#pm-testimonial"><i class="fas fa-users" aria-hidden="true"></i></a>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+
+            <div class="h-eight-social ul-li float-right clearfix">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="sign-up-btn-eight text-center float-right clearfix">
+                <a href="#">sign In</a>
+            </div>
+        </div>
+        <!-- /desktop-menu -->
+        <div class="appi-ei-mobile_menu relative-position">
+            <div class="appi-ei-mobile_menu_button appi-ei-open_mobile_menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="appi-ei-mobile_menu_wrap">
+                <div class="mobile_menu_overlay appi-ei-open_mobile_menu"></div>
+                <div class="appi-ei-mobile_menu_content">
+                    <div class="appi-ei-mobile_menu_close appi-ei-open_mobile_menu">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="m-brand-logo text-center">
+                        <img src="logo.png" alt="">
+                    </div>
+
+
+                    <nav class="appi-ei-mobile-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                            <li class="nav-link"><a href="#eight-banner"><i class="fa fa-home"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#ei-screenshots"><i class="fa fa-file-image-o"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-link"><a href="#featured_service"><i class="fa fa-thumbs-up"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#pm-feature-2"><i class="fa fa-sliders"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#eg-how-work"><i class="fa fa-calculator"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#settings-easy"><i class="fa fa-cogs"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#pm-testimonial"><i class="fas fa-users"
+                                        aria-hidden="true"></i></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- <nav class="appi-ei-mobile-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                            <li><a class="nav-link" href="#eight-banner">Home</a></li>
+                            <li><a class="nav-link" href="#feature-eight">Features</a></li>
+                            <li><a class="nav-link" href="#eight-service">Showcase</a></li>
+                            <li><a class="nav-link" href="#ei-team">Team</a></li>
+                            <li><a class="nav-link" href="#ei-faq">FAQ</a></li>
+                            <li><a class="nav-link" href="#ei-screenshots">Screenshots</a></li>
+                        </ul>
+                    </nav> -->
+                </div>
+            </div>
+        </div>
+        <!-- /mobile-menu -->
+    </header>
+    <!-- End of header section
+        ============================================= -->
+
+
+    <!-- Start of Banner section
+        ============================================= -->
+    <section id="eight-banner" class="eight-banner-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="eight-banner-content">
+                        <div class="banner-content-box appeight-headline pera-content">
+                            <h1 class="cd-headline clip is-full-width">
+                                EASYMAKEMONEY
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">VOTRE APPLICATION</b>
+                                    <b>ENFIN</b>
+                                    <b>DISPONIBLE</b>
+                                </span>
+                            </h1>
+                            <P>Une gestion totale de votre budget avec d'autres fonctionnalités indispensables </P>
+                            <div class="ei-banner-btn">
+                                <a href="#"><i class="fas fa-power-off"></i> Start Now</a>
+                                <a href="#"><span>or</span> Essai gratuit</a>
+                            </div>
+                            <div class="ei-banner-review pera-content ul-li">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <p>(based on <span>1,256 task</span> reviews)</p>
+                            </div>
+                        </div>
+                        <div class="ei-banner-mbl-mockup wow fadeInRight" data-wow-delay="600ms"
+                            data-wow-duration="1500ms">
+                            <img src="presentetion.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop" style="background-image: url('assets/img/dark-img/dw1.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle" style="background-image: url('assets/img/dark-img/dw2.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom" style="background-image: url('assets/img/dark-img/dw3.png')"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Banner section
+        ============================================= -->
+
+
+
+    <!-- Start of Footer  section
+        ============================================= -->
+    <section id="ei-footer" class="ei-footer-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget pera-content appeight-headline">
+                        <div class="ei-footer-logo">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <p>
+
+                        </p>
+                        <div class="ei-payment-mathod">
+                            <img src="assets/img/app-landing/logo/paypal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget appeight-headline ul-li-block">
+                        <h3 class="ei-widget-title">Useful link:</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <!-- <li><a href="#">Team</a></li> -->
+                            <!-- <li><a href="#">Servce</a></li> -->
+                            <li><a href="#settings-easy">FAQ</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <!-- <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Testimonials</a></li> -->
+                            <li><a
+                                    href="mailto:michel.almont@gmail.com?subject=Contact%20depuis%20admin@easymakemoney.com">Contact</a>
+                            </li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget appeight-headline  ul-li-block">
+                        <h3 class="ei-widget-title">Contact:</h3>
+                        <h4 style="color: #666;">
+                            <i" class="fa fa-envelope"></i>
+                                admin@easymakemoney.com
+
+                                <!-- <span>(Sat - Thursday)</span> -->
+                        </h4>
+                        <h4 style="margin-left: 10px;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <B></B>
+
+                            <span>2915 Ogletown Road, Newark, DE 19713 U.S.A.</span>
+                        </h4>
+                        <div class="download-btn">
+                            <a href="#"><img src="assets/img/app-landing/logo/app1.png" alt=""></a>
+                            <a href="#"><img src="assets/img/app-landing/logo/gp1.png" alt=""></a>
+                        </div>
+                        <div class="ei-footer-social">
+                            <a href="#"><i class="fab fa-facebook-f "></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ei-footer-copyright">
+            <div class="container">
+                <div class="ei-footer-copyright-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="ei-copyright-text">
+                                <p>© 2020 <a href="#">Themexriver</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="ei-copyright-menu">
+                                <a href="#settings-easy">Help</a>
+                                <a href="#">Terms & Conditions </a>
+                                <a href="#">Privacy </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ei-footer-shape1 position-absolute" data-parallax='{"x" : 60}'><img
+                src="assets/img/app-landing/shape/fo-shape1.png" alt=""></div>
+        <div class="ei-footer-shape2 position-absolute" data-parallax='{"y" : 60}'><img
+                src="assets/img/app-landing/shape/fo-shape2.png" alt=""></div>
+        <div class="ei-footer-shape3 position-absolute"><img src="assets/img/app-landing/shape/eimap.png" alt=""></div>
+    </section>
+    <!-- End of Footer  section
+        ============================================= -->
+
+    <!-- JS library -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/pagenav.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/bxslider.js"></script>
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/typer-new.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
