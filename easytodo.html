@@ -1212,107 +1212,139 @@
     <section id="settings-easy">
 
         <script>
-            // CREER Ccollection
-            var video31 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw?";
+            // CREER Challenge
+            var video31 = "https://www.youtube.com/embed/j5WCnaS1LUg?autoplay=1&mute=1&loop=1&playlist=j5WCnaS1LUg";
             function myFunction() {
                 document.getElementById("video").src = video31;
-                document.getElementById("infos").textContent = " selectionner Gestion";
-                document.getElementById("infos1").textContent = " selectionner collection";
-                document.getElementById("infos2").textContent = " cliquer sur + pour ajouter une collection";
-                document.getElementById("infos3").textContent = " Remplir les champs pour identifier votre collection";
-                document.getElementById("infos4").textContent = " Enregistrer";
+                document.getElementById("infos").textContent = " cliquer sur + pour ajouter un challenge";
+                document.getElementById("infos1").textContent = " Remplir les champs pour identifier votre challenge";
+                document.getElementById("infos2").textContent = " Sélectionner le niveau de priorité : 'haute' ou 'normal'"
+                document.getElementById("infos3").textContent = " enregistrer";
+
 
             }
-            // MODIFIER COLLECTION
+            // creation challenge hebdomadaire
             function myFunction1() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/5oh0Akw-vwE?autoplay=1&mute=1&loop=1&playlist=5oh0Akw-vwE";
-                document.getElementById("infos").textContent = " selectionner Gestion";
-                document.getElementById("infos1").textContent = " selectionner collection";
-                document.getElementById("infos2").textContent = " Appuie long sur la collection que vous souhaiter modifier";
-                document.getElementById("infos3").textContent = " choisir Modifier";
-                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
+                document.getElementById("video").src = "https://www.youtube.com/embed/PwTgOWsbBvw?autoplay=1&mute=1&loop=1&playlist=PwTgOWsbBvw";
+                document.getElementById("infos").textContent = " cliquer sur + pour ajouter un challenge";
+                document.getElementById("infos1").textContent = " Remplir les champs pour identifier votre challenge";
+                document.getElementById("infos2").textContent = " Sélectionner le niveau de priorité :'Hebdomadaire'"
+                document.getElementById("infos3").textContent = " Sélectionner les jours correspondant au challenge";
+                document.getElementById("infos4").textContent = " enregistrer";
 
             }
-            // CREER COMMANDE
+            // creation challenge mensuel
             function myFunction2() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/MEncvWICQuc?autoplay=1&mute=1&loop=1&playlist=MEncvWICQuc";
-                document.getElementById("infos").textContent = " selectionner Gestion";
-                document.getElementById("infos1").textContent = " selectionner collection puis commande";
-                document.getElementById("infos2").textContent = " cliquer sur + pour ajouter une commande";
-                document.getElementById("infos3").textContent = " Remplir les champs pour identifier votre commande";
-                document.getElementById("infos4").textContent = " Enregistrer";
+                document.getElementById("video").src = "https://www.youtube.com/embed/nGCAORUwriw?autoplay=1&mute=1&loop=1&playlist=nGCAORUwriw";
+                document.getElementById("infos").textContent = " cliquer sur + pour ajouter un challenge";
+                document.getElementById("infos1").textContent = " Remplir les champs pour identifier votre challenge";
+                document.getElementById("infos2").textContent = " Sélectionner le niveau de priorité :'Mensuel'"
+                document.getElementById("infos3").textContent = " Sélectionner la date et l'heure au challenge";
+                document.getElementById("infos4").textContent = " enregistrer";
             }
-            // MODIFIER COMMANDE
+            // creation challenge quotidien
             function myFunction3() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/CF87iS-KCRk?autoplay=1&mute=1&loop=1&playlist=CF87iS-KCRk";
-                document.getElementById("infos").textContent = " selectionner Gestion";
-                document.getElementById("infos1").textContent = " selectionner collection puis commande";
-                document.getElementById("infos2").textContent = " Apuie long sur la commande que vous souhaiter modifier";
-                document.getElementById("infos3").textContent = " choisir Modifier";
-                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
+                document.getElementById("video").src = "https://www.youtube.com/embed/JRFK9p-Dc6k?autoplay=1&mute=1&loop=1&playlist=JRFK9p-Dc6k";
+                document.getElementById("infos").textContent = " cliquer sur + pour ajouter un challenge";
+                document.getElementById("infos1").textContent = " Remplir les champs pour identifier votre challenge";
+                document.getElementById("infos2").textContent = " Sélectionner le niveau de priorité :'Quotidien'"
+                document.getElementById("infos3").textContent = " Sélectionner l'heure correspondant au challenge";
+                document.getElementById("infos4").textContent = " enregistrer";
             }
-            // DASHBOARD PRINCIPAL
+            // creation notification
             function myFunction4() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/QDk91bIXRvU?autoplay=1&mute=1&loop=1&playlist=QDk91bIXRvU";
-
-                document.getElementById("infos").textContent = " #selectionner Dashboard=>Collection";
-                document.getElementById("infos1").textContent = " #Choisir une collection";
-                document.getElementById("infos2").textContent = " #Activer les graphiques";
+                document.getElementById("infos").textContent = " cliquer sur + pour ajouter un challenge";
+                document.getElementById("infos1").textContent = " Remplir les champs pour identifier votre challenge";
+                document.getElementById("infos2").textContent = " Sélectionner le niveau de priorité :'Notification'"
+                document.getElementById("infos3").textContent = " Sélectionner l'heure correspondant au challenge";
+                document.getElementById("infos4").textContent = " enregistrer";
             }
-            // DASHBOARD COMMANDE
+            // déplacer une etape
             function myFunction5() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/6bRs_eYNazw?autoplay=1&mute=1&loop=1&playlist=6bRs_eYNazw"
-                document.getElementById("infos").textContent = " #selectionner DASHBOARD=>Commande";
-                document.getElementById("infos1").textContent = " #Choisir une commande";
-                document.getElementById("infos2").textContent = " #Activer les graphiques";
+                document.getElementById("video").src = "https://www.youtube.com/embed/A52iZPxYOCs?autoplay=1&mute=1&loop=1&playlist=A52iZPxYOCs"
+                document.getElementById("infos").textContent = " Appuie long sur une étape ";
+                document.getElementById("infos1").textContent = " puis déplacer la";
+
             }
-            // FRAIS DE PORT
+            // Notification
             function myFunction6() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/EoPbNQhY_LM?autoplay=1&mute=1&loop=1&playlist=EoPbNQhY_LM";
-                document.getElementById("infos").textContent = " selectionner Gestion";
-                document.getElementById("infos1").textContent = " selectionner Frais de port, puis choissisez une collection";
-                document.getElementById("infos2").textContent = " pour associer des frais de port a une commande cliquez sur +";
-                document.getElementById("infos3").textContent = " Appuie long sur les frais de port que vous souhaiter modifier"
-                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
+                document.getElementById("video").src = "https://www.youtube.com/embed/rCty4WRSS0E?autoplay=1&mute=1&loop=1&playlist=rCty4WRSS0E";
+                document.getElementById("infos").textContent = " Les notification";
+
             }
 
-            // GESTION FOURNISSEUR
+            // Partager challenge
             function myFunction7() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/_kPemc9DMpA?autoplay=1&mute=1&loop=1&playlist=_kPemc9DMpA";
-                document.getElementById("infos").textContent = " selectionner Gestion";
-                document.getElementById("infos1").textContent = " selectionner Fournisseur, puis choissisez une Fournisseur";
-                document.getElementById("infos2").textContent = " pour creer un fournisseur cliquez sur +";
-                document.getElementById("infos3").textContent = " Appuie long sur le fournisseur que vous souhaiter modifier"
-                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
+                document.getElementById("video").src = "https://www.youtube.com/embed/AxrFeW3wCTU?autoplay=1&mute=1&loop=1&playlist=AxrFeW3wCTU";
+                document.getElementById("infos").textContent = " selectionner le challenge que vous souhaitez partager";
+                document.getElementById("infos1").textContent = " Cliquez sur l'icone share en haut a droite ";
+                document.getElementById("infos2").textContent = " Sélectionner l'application que vous souhaitez utiliser ";
+                document.getElementById("infos3").textContent = " pour envoyer vos données"
+                document.getElementById("infos4").textContent = " Envoyer";
             }
-            // DASHBOARD PRODUITS
+            // reatauration challenge
             function myFunction8() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/Fzh8i_gfxqg?autoplay=1&mute=1&loop=1&playlist=Fzh8i_gfxqg"
-                document.getElementById("infos").textContent = " selectionner DASHBOARD=>produit";
-                document.getElementById("infos1").textContent = " choisir un produit";
-                document.getElementById("infos2").textContent = " activer les graphiques";
-                document.getElementById("infos3").textContent = " double cliquez sur l'element pour voir ces stats";
+                document.getElementById("video").src = "https://www.youtube.com/embed/Ay4vMrx-60I?autoplay=1&mute=1&loop=1&playlist=Ay4vMrx-60I"
+                document.getElementById("infos").textContent = " selectionner menu en haut a droite";
+                document.getElementById("infos1").textContent = " puis sauvegarde";
+                document.getElementById("infos2").textContent = " Sélectionner la sauvegarde que vous souhaitez restaurer";
+                document.getElementById("infos3").textContent = " Ensuite cliquer sur restaurer en haut à gauche";
             }
-            // CREER PRODUITS                   
+            // sauvegarde challenge
             function myFunction9() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/vGekX_TPVtM?autoplay=1&mute=1&loop=1&playlist=vGekX_TPVtM";
-                document.getElementById("infos").textContent = " selectionner Gestion";
-                document.getElementById("infos1").textContent = " selectionner collection, commande puis produit";
-                document.getElementById("infos2").textContent = " cliquer sur + pour ajouter un produit";
-                document.getElementById("infos3").textContent = " Remplir les champs pour identifier votre produit";
-                document.getElementById("infos4").textContent = " Enregistrer";
+                document.getElementById("video").src = "https://www.youtube.com/embed/tiHt8jNNDyo?autoplay=1&mute=1&loop=1&playlist=tiHt8jNNDyo";
+                document.getElementById("infos").textContent = " Appuie long sur un challenge";
+                document.getElementById("infos1").textContent = " Valider";
+           
             }
-            // MODIFIER PRODUITS                      
+            // score des challenges                     
             function myFunction10() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/qm3aSjPVpG4?autoplay=1&mute=1&loop=1&playlist=qm3aSjPVpG4";
+                document.getElementById("video").src = "https://www.youtube.com/embed/jZ8d7zM0RGg?autoplay=1&mute=1&loop=1&playlist=jZ8d7zM0RGg";
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner collection, commande puis produit";
                 document.getElementById("infos2").textContent = " Apuie long sur le produit que vous souhaiter modifier";
                 document.getElementById("infos3").textContent = " choisir Modifier";
                 document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
-            // NOTE DE FRAIS
+            // suppression sauvegarde
             function myFunction11() {
+                document.getElementById("video").src = "https://www.youtube.com/embed/SQ9cWFvAdao?autoplay=1&mute=1&loop=1&playlist=SQ9cWFvAdao";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner Note de frais, puis choissisez une collection";
+                document.getElementById("infos2").textContent = " pour associer une Note de frais a une collection cliquez sur +";
+                document.getElementById("infos3").textContent = " Appuie long sur la Note de frais que vous souhaiter modifier"
+                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
+            }
+            // suppression challenge
+            function myFunction12() {
+                document.getElementById("video").src = "https://www.youtube.com/embed/91_n4HEOQt8?autoplay=1&mute=1&loop=1&playlist=91_n4HEOQt8";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner Note de frais, puis choissisez une collection";
+                document.getElementById("infos2").textContent = " pour associer une Note de frais a une collection cliquez sur +";
+                document.getElementById("infos3").textContent = " Appuie long sur la Note de frais que vous souhaiter modifier"
+                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
+            }
+            // DOCUMENTATION POSSIBLE
+            function myFunction13() {
+                document.getElementById("video").src = "https://www.youtube.com/embed/_AOos51BbWk?autoplay=1&mute=1&loop=1&playlist=_AOos51BbWk";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner Note de frais, puis choissisez une collection";
+                document.getElementById("infos2").textContent = " pour associer une Note de frais a une collection cliquez sur +";
+                document.getElementById("infos3").textContent = " Appuie long sur la Note de frais que vous souhaiter modifier"
+                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
+            }
+            // upload challenge
+            function myFunction14() {
+                document.getElementById("video").src = "https://www.youtube.com/embed/oTpviJPsH8w?autoplay=1&mute=1&loop=1&playlist=oTpviJPsH8w";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner Note de frais, puis choissisez une collection";
+                document.getElementById("infos2").textContent = " pour associer une Note de frais a une collection cliquez sur +";
+                document.getElementById("infos3").textContent = " Appuie long sur la Note de frais que vous souhaiter modifier"
+                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
+            }
+            // Upload challenge
+            function myFunction15() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/ESiI54d0iwQ?autoplay=1&mute=1&loop=1&playlist=ESiI54d0iwQ";
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner Note de frais, puis choissisez une collection";
@@ -1320,6 +1352,7 @@
                 document.getElementById("infos3").textContent = " Appuie long sur la Note de frais que vous souhaiter modifier"
                 document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
+
         </script>
         <div class="principale">
 
@@ -1330,7 +1363,7 @@
                     <button class="bouton" onclick="myFunction()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                CREER COLLECTION
+                                CREER CHALLENGE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1348,7 +1381,7 @@
                     <button class="bouton" onclick="myFunction1()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                MODIFIER COLLECTION
+                                CREER CHALLENGE HEBDOMADAIRE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1365,7 +1398,7 @@
                     <button class="bouton" onclick="myFunction2()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                CREER COMMANDE
+                                CREER CHALLENGE MENSUEL
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1382,7 +1415,7 @@
                     <button class="bouton" onclick="myFunction3()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                MODIFIER COMMANDE
+                                CREER CHALLENGE QUOTIDIEN
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1401,7 +1434,7 @@
                     <button class="bouton" onclick="myFunction4()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                DASHBOARD PRINCIPAL
+                                CREER NOTIFICATION
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1418,7 +1451,7 @@
                     <button class="bouton" onclick="myFunction5()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                DASHBOARD COMMANDE
+                                DEPLACER UNE ETAPE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1455,7 +1488,7 @@
                     <button class="bouton" onclick="myFunction7()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                GESTION FOURNISSEUR
+                                PARTAGER CHALLENGE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1468,10 +1501,10 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction6()" type="button">
+                    <button class="bouton" onclick="myFunction8()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                FRAIS DE PORT
+                                RESTAURATION CHALLENGE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1485,10 +1518,10 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction7()" type="button">
+                    <button class="bouton" onclick="myFunction9()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                GESTION FOURNISSEUR
+                                SAUVEGARDE CHALLENGE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1503,7 +1536,7 @@
 
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction8()" type="button">
+                    <button class="bouton" onclick="myFunction10()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 DASHBOARD PRODUITS
@@ -1520,10 +1553,10 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction9()" type="button">
+                    <button class="bouton" onclick="myFunction11()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                CREER PRODUITS
+                                SUPPRESSION SAUVEGARDE
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="lotie"
@@ -1536,10 +1569,10 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction10()" type="button">
+                    <button class="bouton" onclick="myFunction12()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                MODIFIER PRODUITS
+                                SUPPRESSION CHALLENGES
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="lotie"
@@ -1553,10 +1586,40 @@
 
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction11()" type="button">
+                    <button class="bouton" onclick="myFunction13()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                NOTE DE FRAIS
+                                DOCUMENTATION POSSIBLE
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets5.lottiefiles.com/packages/lf20_ouvwwwpz.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="bouton" onclick="myFunction14()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                UPLOAD CHALLENGE
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets5.lottiefiles.com/packages/lf20_ouvwwwpz.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="bouton" onclick="myFunction15()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                VALIDATION CHALLENGE
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="lotie"
