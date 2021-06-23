@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-version.css">
 
+
     <style>
         body {
 
@@ -166,12 +167,7 @@
             margin: 0px;
         }
 
-        iframe#video {
-            width: 100%;
-            height: 450px;
-            border-radius: 5%;
 
-        }
 
         lottie-player.lotie {
             margin: 0px;
@@ -237,6 +233,13 @@
             transition: .5s;
         }
 
+        iframe#video {
+            width: 100%;
+            height: 450px;
+            border-radius: 5%;
+
+        }
+
         ul.menu2002 li a:before {
             content: '';
             position: absolute;
@@ -261,6 +264,23 @@
             color: #ffa502;
             box-shadow: 0 0 15px #d35400;
             text-shadow: 0 0 15px #d35400;
+        }
+
+        iframe#video1 {
+            width: 600px;
+            height: 500px;
+            border-radius: 5%;
+        }
+
+        .fontsize {
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width: 1637px) {
+            iframe#video1 {
+                width: 560px;
+                height: 460px;
+            }
         }
 
         @media only screen and (max-width: 1485px) {
@@ -292,6 +312,25 @@
                 width: 60px;
                 height: 25px;
 
+            }
+
+            .taille {
+                height: 140px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 56px;
+            }
+        }
+
+        @media only screen and (max-width: 1163px) {
+            iframe#video1 {
+                width: 460px;
+                height: 360px;
+            }
+
+            .fontsize {
+                font-size: 20px;
             }
         }
 
@@ -352,6 +391,49 @@
 
             div.principale {
                 min-width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 823px) {
+            .fontsize {
+                font-size: 15px;
+            }
+
+        }
+
+        @media only screen and (max-width: 723px) {
+            .taille {
+                height: 100px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media only screen and (max-width: 613px) {
+            iframe#video1 {
+                width: 360px;
+                height: 260px;
+            }
+
+            .fontsize {
+                font-size: 10px;
+            }
+        }
+
+
+        @media only screen and (max-width: 400px) {
+            .taille {
+                height: 70px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 26px;
+            }
+
+            .fontsize {
+                font-size: 9px;
             }
         }
     </style>
@@ -479,47 +561,50 @@
                 <div class="col-lg-12">
                     <div class="eight-banner-content">
                         <div class="banner-content-box appeight-headline pera-content">
-                            <h1 class="cd-headline clip is-full-width">
-                                EASYTODO <br>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">VOTRE APPLICATION</b>
-                                    <b>ENFIN</b>
+                            <div class="taille">
+                                <h1 class="cd-headline clip is-full-width">
+                                    EASYTODO <br>
+                                    <span class="cd-words-wrapper"></span>
+                                    <b class="is-visible">ENFIN</b>
                                     <b>DISPONIBLE</b>
-                                </span>
-                            </h1>
-                            <P>La TODOLIST intelligente </P>
-                            <div class="ei-banner-btn">
-                                <a href="#"><i class="fas fa-power-off"></i> Start Now</a>
-                                <a href="#"><span>or</span> Essai gratuit</a>
+                                    </span>
+                                </h1>
+                                <P>La TODOLIST intelligente </P>
+                                <div class="ei-banner-btn">
+                                    <a href="#"><i class="fas fa-power-off"></i> Start Now</a>
+                                    <a href="#"><span>or</span> Essai gratuit</a>
+                                </div>
+                                <div class="ei-banner-review pera-content ul-li">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <p>(based on <span>1,256 task</span> reviews)</p>
+                                </div>
                             </div>
-                            <div class="ei-banner-review pera-content ul-li">
-                                <ul>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                    <li><i class="fas fa-star"></i></li>
-                                </ul>
-                                <p>(based on <span>1,256 task</span> reviews)</p>
+
+                            <div class="ei-banner-mbl-mockup wow fadeInRight" data-wow-delay="600ms"
+                                data-wow-duration="1500ms">
+                                <img src="presentetion.png" alt="">
                             </div>
-                        </div>
-                        <div class="ei-banner-mbl-mockup wow fadeInRight" data-wow-delay="600ms"
-                            data-wow-duration="1500ms">
-                            <img src="presentetion.png" alt="">
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="waveWrapper waveAnimation">
-            <div class="waveWrapperInner bgTop">
-                <div class="wave waveTop" style="background-image: url('assets/img/dark-img/dw1.png')"></div>
-            </div>
-            <div class="waveWrapperInner bgMiddle">
-                <div class="wave waveMiddle" style="background-image: url('assets/img/dark-img/dw2.png')"></div>
-            </div>
-            <div class="waveWrapperInner bgBottom">
-                <div class="wave waveBottom" style="background-image: url('assets/img/dark-img/dw3.png')"></div>
+            <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                    <div class="wave waveTop" style="background-image: url('assets/img/dark-img/dw1.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                    <div class="wave waveMiddle" style="background-image: url('assets/img/dark-img/dw2.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                    <div class="wave waveBottom" style="background-image: url('assets/img/dark-img/dw3.png')"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -860,7 +945,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInRight " data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/7PPF09ZBcek?autoplay=1&mute=1&loop=1&playlist=7PPF09ZBcek
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/7PPF09ZBcek?autoplay=1&mute=1&loop=1&playlist=7PPF09ZBcek
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp1.jpg" alt=""> -->
@@ -926,7 +1011,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInLeft" data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/qqcEEWlWGlg?autoplay=1&mute=1&loop=1&playlist=qqcEEWlWGlg
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/qqcEEWlWGlg?autoplay=1&mute=1&loop=1&playlist=qqcEEWlWGlg
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp2.jpg" alt=""> -->
@@ -981,7 +1066,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInRight" data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/4OPsI1ShpR0?autoplay=1&mute=1&loop=1&playlist=4OPsI1ShpR0
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/4OPsI1ShpR0?autoplay=1&mute=1&loop=1&playlist=4OPsI1ShpR0
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp3.jpg" alt=""> -->
@@ -1040,7 +1125,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInRight" data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/S2Wx9F0pELk?autoplay=1&mute=1&loop=1&playlist=S2Wx9F0pELk
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/S2Wx9F0pELk?autoplay=1&mute=1&loop=1&playlist=S2Wx9F0pELk
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp3.jpg" alt=""> -->
@@ -1099,7 +1184,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInRight" data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/aEcjNAdNJ2U?autoplay=1&mute=1&loop=1&playlist=aEcjNAdNJ2U
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/aEcjNAdNJ2U?autoplay=1&mute=1&loop=1&playlist=aEcjNAdNJ2U
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp3.jpg" alt=""> -->
@@ -1369,7 +1454,7 @@
                     <button class="bouton" onclick="myFunction1()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                CREER CHALLENGE HEBDOMADAIRE
+                                HEBDOMADAIRE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1386,7 +1471,7 @@
                     <button class="bouton" onclick="myFunction2()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                CREER CHALLENGE MENSUEL
+                                MENSUEL
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1403,7 +1488,7 @@
                     <button class="bouton" onclick="myFunction3()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                CREER CHALLENGE QUOTIDIEN
+                                QUOTIDIEN
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1422,7 +1507,7 @@
                     <button class="bouton" onclick="myFunction4()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                CREER NOTIFICATION
+                                NOTIFICATION
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1439,7 +1524,7 @@
                     <button class="bouton" onclick="myFunction5()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                DEPLACER UNE ETAPE
+                                DEPLACER ETAPE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1458,7 +1543,7 @@
                     <button class="bouton" onclick="myFunction6()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                notification
+                                NOTIFICATION
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1476,7 +1561,7 @@
                     <button class="bouton" onclick="myFunction7()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                PARTAGER CHALLENGE
+                                PARTAGE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1492,7 +1577,7 @@
                     <button class="bouton" onclick="myFunction8()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                RESTAURATION CHALLENGE
+                                RESTAURATION
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1509,7 +1594,7 @@
                     <button class="bouton" onclick="myFunction9()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                SAUVEGARDE CHALLENGE
+                                SAUVEGARDE
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1527,7 +1612,7 @@
                     <button class="bouton" onclick="myFunction10()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                SCORES CHALLENGES
+                                SCORES
 
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -1544,7 +1629,7 @@
                     <button class="bouton" onclick="myFunction11()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                SUPPRESSION SAUVEGARDE
+                                SUPPRESSION
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="lotie"
@@ -1560,7 +1645,7 @@
                     <button class="bouton" onclick="myFunction12()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                SUPPRESSION CHALLENGES
+                                SUPPRESSION
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="lotie"
@@ -1577,7 +1662,7 @@
                     <button class="bouton" onclick="myFunction13()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                DOCUMENTATION POSSIBLE
+                                DOCUMENTATION
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="lotie"
@@ -1592,7 +1677,7 @@
                     <button class="bouton" onclick="myFunction14()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                UPLOAD CHALLENGE
+                                UPLOAD
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="lotie"
@@ -1607,7 +1692,7 @@
                     <button class="bouton" onclick="myFunction15()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
-                                VALIDATION CHALLENGE
+                                VALIDATION
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="lotie"
@@ -1631,12 +1716,12 @@
                     <p class="info">
                     <h2 class="cd-headline clip is-full-width">
 
-                        <span class="cd-words-wrapper info5">
-                            <b id="infos" class="is-visible"></b>
-                            <b id="infos1"></b>
-                            <b id="infos2"></b>
-                            <b id="infos3"></b>
-                            <b id="infos4"></b>
+                        <span class="cd-words-wrapper info5 fontsize">
+                            <b style="line-height: 5px;" id="infos" class="is-visible"></b>
+                            <b style="line-height: 5px;" id="infos1"></b>
+                            <b style="line-height: 5px;" id="infos2"></b>
+                            <b style="line-height: 5px;" id="infos3"></b>
+                            <b style="line-height: 5px;" id="infos4"></b>
                         </span>
                     </h2>
                     </p>
