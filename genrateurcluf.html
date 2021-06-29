@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>App Landing - Dark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/fv.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/fv.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/newfont.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-version.css">
+
+    <style>
+        body {
+
+            background-image: url("71.jpg");
+
+        }
+
+        .lotie {
+            width: 100px;
+            height: 50px;
+
+        }
+
+
+
+        div.principale {
+            position: relative;
+            border-radius: 15%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: center;
+            min-width: 1000px;
+            padding-bottom: opx;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.bouton {
+            /* background-color: white; */
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border: white;
+            border-radius: 15%;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        div.bouton:hover {
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15%;
+            cursor: pointer;
+            transform: translateY(-30px);
+            transition: transform 500ms ease-out 200ms;
+            background: linear-gradient(45deg, #97a1ac, #99bdec)
+        }
+
+        div.boutonHaut:hover {
+            display: inline-block;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15%;
+            cursor: pointer;
+            transform: translateY(-30px);
+            transition: transform 500ms ease-out 200ms;
+            background: linear-gradient(45deg, #97a1ac, #99bdec)
+        }
+
+        div.boutonHaut {
+
+            /* background-color:white; */
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border: white;
+            border-radius: 15%;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+
+        }
+
+        p.titreBouton {
+
+            color: black;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            font-size: 10px;
+            padding: 5px;
+
+        }
+
+        div.divVerticale {
+
+            display: inline-block;
+        }
+
+        div.smartphone {
+            display: inline-block;
+            padding: 15px;
+            width: 100%;
+            height: 570px;
+            border-radius: 30px 30px 10px 10px;
+            background-image: linear-gradient(-38deg, #67696b 0%, #040404 100%);
+            margin-bottom: 60px;
+        }
+
+        div.premier {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            border-radius: 15px;
+        }
+
+        div.second {
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            height: auto;
+        }
+
+
+        div.card {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+
+
+        div.tierce {
+            position: right;
+            display: inline-block;
+            width: auto;
+            margin: 0px;
+        }
+
+
+
+        lottie-player.lotie {
+            margin: 0px;
+            border-radius: 15%;
+
+        }
+
+        img.logo {
+            position: absolute;
+            top: 0px;
+            left: 90%;
+
+        }
+
+        button.bouton {
+            outline: none;
+            border: none;
+            background-color: transparent;
+
+        }
+
+
+
+        div.card2 {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        ul.menu2002 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            top: 0px;
+            right: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        ul.menu2002 li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        ul.menu2002 li a {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background: #171515;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #666;
+            transition: .5s;
+        }
+
+        iframe#video {
+            width: 100%;
+            height: 450px;
+            border-radius: 5%;
+
+        }
+
+        ul.menu2002 li a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #d35400;
+            transition: .5s;
+            transform: scale(.9);
+            z-index: -1;
+        }
+
+        ul.menu2002 li a:hover:before {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px #d35400;
+            filter: blur(3px);
+        }
+
+        ul.menu2002 li a:hover {
+            color: #ffa502;
+            box-shadow: 0 0 15px #d35400;
+            text-shadow: 0 0 15px #d35400;
+        }
+
+        .ecrit {
+            color: white;
+        }
+
+        iframe#video1 {
+            width: 660px;
+            height: 560px;
+            border-radius: 5%;
+        }
+
+        .fontsize {
+            font-size: 30px;
+        }
+
+        .paddingOne {
+            margin-top: 150px;
+            margin-bottom: 50px;
+            width: 90%;
+            color: #ffa502;
+
+        }
+
+        @media only screen and (max-width: 1637px) {
+            iframe#video1 {
+                width: 560px;
+                height: 460px;
+            }
+        }
+
+        @media only screen and (max-width: 1485px) {
+            .lotie {
+                width: 90px;
+                height: 40px;
+
+            }
+        }
+
+        @media only screen and (max-width: 1485px) {
+            .lotie {
+                width: 80px;
+                height: 35px;
+
+            }
+        }
+
+        @media only screen and (max-width: 1219px) {
+            .lotie {
+                width: 70px;
+                height: 30px;
+
+            }
+        }
+
+        @media only screen and (max-width: 1219px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .taille {
+                height: 140px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 56px;
+            }
+        }
+
+        @media only screen and (max-width: 1163px) {
+            iframe#video1 {
+                width: 460px;
+                height: 360px;
+            }
+
+            .fontsize {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 80%;
+
+            }
+
+            .divSecond {
+                width: 80%;
+
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 90%;
+
+            }
+
+            .divSecond {
+                width: 90%;
+
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 90%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .divSecond {
+                width: 90%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            div.principale {
+                min-width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 823px) {
+            .fontsize {
+                font-size: 15px;
+            }
+
+        }
+
+        @media only screen and (max-width: 723px) {
+            .taille {
+                height: 100px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media only screen and (max-width: 613px) {
+            iframe#video1 {
+                width: 360px;
+                height: 260px;
+            }
+
+            .fontsize {
+                font-size: 10px;
+            }
+        }
+
+
+        @media only screen and (max-width: 400px) {
+            .taille {
+                height: 70px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 26px;
+            }
+
+            .fontsize {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body class="app-eight-home dark-version" data-spy="scroll" data-target=".navigation-eight" data-offset="50">
+    <!-- preloader - start -->
+    <div id="preloader" class="ei-preloader"></div>
+    <div class="ei-up">
+        <a href="#" id="scrollup" class="ei-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <!-- Start of header section
+        ============================================= -->
+    <header id="header-eight" class="main-header-eight">
+        <div class="appheader-content">
+            <div class="site-logo float-left">
+                <a href="#"><img src="logo.png" alt=""></a>
+            </div>
+            <!-- <nav class="navigation-eight ul-li">
+                <ul>
+                    <li><a class="nav-link" href="#eight-banner">Home</a></li>
+                    <li><a class="nav-link" href="#feature-eight">Features</a></li>
+                    <li><a class="nav-link" href="#eight-service">Showcase</a></li>
+                    <li><a class="nav-link" href="#ei-team">Team</a></li>
+                    <li><a class="nav-link" href="#ei-faq">FAQ</a></li>
+                    <li><a class="nav-link" href="#ei-screenshots">Screenshots</a></li>
+                </ul>
+            </nav> -->
+            <nav class="navigation-eight ul-li">
+                <ul>
+                    <li class="nav-link"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="index.html"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="index.html"><i class=" fa fa-thumbs-up" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="index.html"><i class="fa fa-sliders" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="index.html"><i class=" fa fa-calculator" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="index.html"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="index.html"><i class="fas fa-users" aria-hidden="true"></i></a>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+
+            <div class="h-eight-social ul-li float-right clearfix">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="sign-up-btn-eight text-center float-right clearfix">
+                <a href="#">sign In</a>
+            </div>
+        </div>
+        <!-- /desktop-menu -->
+        <div class="appi-ei-mobile_menu relative-position">
+            <div class="appi-ei-mobile_menu_button appi-ei-open_mobile_menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="appi-ei-mobile_menu_wrap">
+                <div class="mobile_menu_overlay appi-ei-open_mobile_menu"></div>
+                <div class="appi-ei-mobile_menu_content">
+                    <div class="appi-ei-mobile_menu_close appi-ei-open_mobile_menu">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="m-brand-logo text-center">
+                        <img src="logo.png" alt="">
+                    </div>
+
+
+                    <nav class="appi-ei-mobile-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                            <li class="nav-link"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-link"><a href="index.html"><i class="fa fa-file-image-o"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-link"><a href="index.html"><i class="fa fa-thumbs-up"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="index.html"><i class="fa fa-sliders"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="index.html"><i class="fa fa-calculator"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="index.html"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-link"><a href="index.html"><i class="fas fa-users"
+                                        aria-hidden="true"></i></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- <nav class="appi-ei-mobile-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                            <li><a class="nav-link" href="#eight-banner">Home</a></li>
+                            <li><a class="nav-link" href="#feature-eight">Features</a></li>
+                            <li><a class="nav-link" href="#eight-service">Showcase</a></li>
+                            <li><a class="nav-link" href="#ei-team">Team</a></li>
+                            <li><a class="nav-link" href="#ei-faq">FAQ</a></li>
+                            <li><a class="nav-link" href="#ei-screenshots">Screenshots</a></li>
+                        </ul>
+                    </nav> -->
+                </div>
+            </div>
+        </div>
+        <!-- /mobile-menu -->
+    </header>
+    <!-- End of header section
+        ============================================= -->
+
+    <!-- Start of Banner section
+        ============================================= -->
+    <section id="featured_service" class="featured_service_section relative-position">
+        <div class="container">
+            <div class="paddingOne">
+                <div class="section_title_text saas-modern-headline pera-content">
+                    <h2>Contrat de licence utilisateur final (CLUF) <span>pour Easymakemoney</span></h2>
+                    <p><br>
+                        Ce contrat de licence d'utilisateur final ("CLUF") est un accord juridique entre vous et
+                        Easymakemoney <br>
+
+                        Cet accord CLUF régit votre acquisition et votre utilisation de notre logiciel Easymakemoney
+                        ("Logiciel") directement auprès d'Easymakemoney ou indirectement par l'intermédiaire d'un
+                        revendeur ou d'un distributeur agréé Easymakemoney (un "Revendeur"). <br>
+
+                        Veuillez lire attentivement cet accord CLUF avant de terminer le processus d'installation et
+                        d'utiliser le logiciel Easymakemoney. Il fournit une licence d'utilisation du logiciel
+                        Easymakemoney et contient des informations sur la garantie et des exclusions de responsabilité.
+                        <br>
+
+
+                        Si vous vous inscrivez pour un essai gratuit du logiciel Easymakemoney, cet accord CLUF régira
+                        également cet essai. En cliquant sur « accepter » ou en installant et/ou en utilisant le
+                        logiciel Easymakemoney, vous confirmez votre acceptation du logiciel et acceptez d'être lié par
+                        les termes de cet accord CLUF. <br>
+
+                        Si vous concluez cet accord CLUF au nom d'une société ou d'une autre entité juridique, vous
+                        déclarez que vous avez le pouvoir de lier cette entité et ses sociétés affiliées à ces termes et
+                        conditions. Si vous ne disposez pas d'une telle autorité ou si vous n'êtes pas d'accord avec les
+                        termes et conditions de cet accord CLUF, n'installez pas ou n'utilisez pas le Logiciel, et vous
+                        ne devez pas accepter cet accord CLUF. <br>
+
+                        Cet accord CLUF s'appliquera uniquement au logiciel fourni par Easymakemoney, indépendamment du
+                        fait qu'un autre logiciel soit mentionné ou décrit dans les présentes. Les conditions
+                        s'appliquent également à toutes les mises à jour, suppléments, services Internet et services
+                        d'assistance d'Easymakemoney, à moins que d'autres conditions n'accompagnent ces éléments lors
+                        de la livraison. Dans l'affirmative, ces termes s'appliquent. <br>
+
+                    <h2>Octroi de licence</h2> <br>
+                    Easymakemoney vous accorde par la présente une licence personnelle, non transférable et non
+                    exclusive pour utiliser le logiciel Easymakemoney sur vos appareils conformément aux termes de
+                    cet accord CLUF. <br>
+
+                    Vous êtes autorisé à charger le logiciel Easymakemoney (par exemple un PC, un ordinateur
+                    portable, un mobile ou une tablette) sous votre contrôle. Vous êtes responsable de vous assurer
+                    que votre appareil répond aux exigences minimales du logiciel Easymakemoney.
+
+                    <h2>Vous n'êtes pas autorisé à :</h2> <br>
+
+                    Éditer, altérer, modifier, adapter, traduire ou changer de quelque manière que ce soit tout ou
+                    partie du Logiciel, ni permettre que tout ou partie du Logiciel soit combiné ou incorporé dans
+                    un autre logiciel, ni décompiler, désassembler ou désosser le Logiciel ou tentative de faire de
+                    telles choses <br>
+                    Reproduire, copier, distribuer, revendre ou utiliser le Logiciel à des fins commerciales
+                    Autoriser tout tiers à utiliser le Logiciel au nom ou au profit de tout tiers
+                    Utiliser le Logiciel d'une manière qui enfreint toute loi locale, nationale ou internationale
+                    applicable <br>
+                    utiliser le logiciel à toute fin que Easymakemoney considère comme une violation de cet accord
+                    CLUF <br>
+                    <h2>Propriété intellectuelle et propriété</h2>
+                    Easymakemoney conservera à tout moment la propriété du logiciel tel que téléchargé à l'origine
+                    par vous et de tous les téléchargements ultérieurs du logiciel par vous. Le Logiciel (et les
+                    droits d'auteur et autres droits de propriété intellectuelle de quelque nature que ce soit sur
+                    le Logiciel, y compris toute modification qui y est apportée) sont et resteront la propriété
+                    d'Easymakemoney. <br>
+
+                    Easymakemoney se réserve le droit de concéder des licences d'utilisation du Logiciel à des
+                    tiers. <br>
+
+                    <h2>Résiliation</h2>
+                    Cet accord CLUF entre en vigueur à compter de la date à laquelle vous utilisez le logiciel pour
+                    la première fois et se poursuivra jusqu'à sa résiliation. Vous pouvez le résilier à tout moment
+                    sur notification écrite à Easymakemoney. <br>
+
+                    Il sera également résilié immédiatement si vous ne respectez pas l'une des conditions de cet
+                    accord CLUF. Lors d'une telle résiliation, les licences accordées par cet accord CLUF seront
+                    immédiatement résiliées et vous acceptez d'arrêter tout accès et utilisation du Logiciel. Les
+                    dispositions qui, de par leur nature, perdurent et survivront à toute résiliation de cet accord
+                    CLUF. Ce CLUF a été créé par App EULA Template Generator de App-Privacy-Policy.com pour
+                    Easymakemoney <br>
+
+                    <h2>Droit applicable</h2>
+                    Cet accord CLUF, et tout litige découlant de ou en relation avec cet accord CLUF, seront régis
+                    et interprétés conformément aux lois de fr .</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line_animation">
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+        </div>
+    </section>
+    <!-- Start of Footer  section
+        ============================================= -->
+    <section id="ei-footer" class="ei-footer-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget pera-content appeight-headline">
+                        <div class="ei-footer-logo">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <p>
+
+                        </p>
+                        <div class="ei-payment-mathod">
+                            <img src="assets/img/app-landing/logo/paypal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget appeight-headline ul-li-block">
+                        <h3 class="ei-widget-title">Useful link:</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <!-- <li><a href="#">Team</a></li> -->
+                            <!-- <li><a href="#">Servce</a></li> -->
+                            <li><a href="index.html">FAQ</a></li>
+                            <li><a href="index.html">About Us</a></li>
+                            <!-- <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Testimonials</a></li> -->
+                            <li><a
+                                    href="mailto:michel.almont@gmail.com?subject=Contact%20depuis%20admin@easymakemoney.com">Contact</a>
+                            </li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget appeight-headline  ul-li-block">
+                        <h3 class="ei-widget-title">Contact:</h3>
+                        <h4 style="color: #666;">
+                            <i" class="fa fa-envelope"></i>
+                                admin@easymakemoney.com
+
+                                <!-- <span>(Sat - Thursday)</span> -->
+                        </h4>
+                        <h4 style="margin-left: 10px;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <B></B>
+
+                            <span>2915 Ogletown Road, Newark, DE 19713 U.S.A.</span>
+                        </h4>
+                        <div class="download-btn">
+                            <a href="#"><img src="assets/img/app-landing/logo/app1.png" alt=""></a>
+                            <a href="#"><img src="assets/img/app-landing/logo/gp1.png" alt=""></a>
+                        </div>
+                        <div class="ei-footer-social">
+                            <a href="#"><i class="fab fa-facebook-f "></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ei-footer-copyright">
+            <div class="container">
+                <div class="ei-footer-copyright-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="ei-copyright-text">
+                                <p>© 2020 <a href="#">Themexriver</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="ei-copyright-menu">
+                                <a href="politiquedeconfidentialite.html">Politique de confidentialité</a>
+                                <a href="conditiongeneraldevente.html">Condition général de vente</a>
+                                <a href="avisderesponsabilite.html">Avis de responsabilité </a>
+                                <a href="genrateurcluf.html">FAQ sur le générateur de CLUF d'application </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ei-footer-shape1 position-absolute" data-parallax='{"x" : 60}'><img
+                src="assets/img/app-landing/shape/fo-shape1.png" alt=""></div>
+        <div class="ei-footer-shape2 position-absolute" data-parallax='{"y" : 60}'><img
+                src="assets/img/app-landing/shape/fo-shape2.png" alt=""></div>
+        <div class="ei-footer-shape3 position-absolute"><img src="assets/img/app-landing/shape/eimap.png" alt=""></div>
+    </section>
+    <!-- End of Footer  section
+                ============================================= -->
+
+    <!-- JS library -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/pagenav.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/bxslider.js"></script>
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/typer-new.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
